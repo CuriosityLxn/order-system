@@ -1,13 +1,15 @@
-const path    = require('path');
-const webpack = require('webpack');
+const path     = require('path');
+const webpack  = require('webpack');
 
-const distPath    = path.join(__dirname, '../../dist/assets');
-const srcPath     = path.join(__dirname, '../../src');
+const distPath = path.join(__dirname, '../../dist/assets');
+const srcPath  = path.join(__dirname, '../../src');
 
 let config = {
 
   entry: {
-    app: `${srcPath}/index.js`
+    app      : `${srcPath}/index.js`,
+    client   : `${srcPath}/client.js`,
+    business : `${srcPath}/business.js`
   },
 
   output : {

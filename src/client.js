@@ -1,19 +1,18 @@
 import React           from 'react';
 import { render }      from 'react-dom';
-import App             from 'pages/home';
+import Client          from 'pages/client';
 import { Provider }    from 'react-redux';
 import { createStore } from 'redux';
 import reducer         from './reducers';
 import domready        from 'domready';
 
-import '@hlj/share';
 
 const store = createStore(reducer);
 
 domready(() => {
   render(
     <Provider store={store}>
-      <App />
+      <Client />
     </Provider>,
     document.getElementById('app')
   );

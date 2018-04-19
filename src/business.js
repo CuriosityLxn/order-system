@@ -1,19 +1,18 @@
 import React           from 'react';
 import { render }      from 'react-dom';
-import App             from 'pages/home';
+import Business        from 'pages/business';
 import { Provider }    from 'react-redux';
 import { createStore } from 'redux';
 import reducer         from './reducers';
 import domready        from 'domready';
 
-import '@hlj/share';
 
 const store = createStore(reducer);
 
 domready(() => {
   render(
     <Provider store={store}>
-      <App />
+      <Business />
     </Provider>,
     document.getElementById('app')
   );
