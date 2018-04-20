@@ -1,0 +1,54 @@
+// @import "_flexbox.scss";
+@import "~@hlj/ui/style/hairline.scss";
+
+.noTop { padding-top: 0.1rem !important }
+.product-list-container {
+  background: #f6f7f8;
+  .product-bg {
+    background: #fff;
+  }
+  .product-list-one {
+    overflow: hidden;
+    background: #f7f7f7;
+
+    > li {
+      width: 100%;
+      padding: .5rem .25rem .5rem .25rem;
+      float: left;
+      overflow: hidden;
+      display: block;
+      @include hairline-bottom(#E6E6E6);
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    // &.lite-border {
+    //   padding: 0;
+
+    //   li {
+    //     padding: 0
+    //   }
+    //   >li:nth-child(even) {
+    //     padding-left: 0.075rem;
+    //     padding-right: 1px;
+    //   }
+    //   >li:nth-child(odd) {
+    //     padding-right: 0.075rem;
+    //     padding-left: 1px;
+    //   }
+    // }
+
+  }
+  .tip-ull {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

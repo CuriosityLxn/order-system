@@ -1,0 +1,33 @@
+.m-cate-nav {
+  position: fixed;
+  background: #fff;
+  overflow-y: auto;
+  min-height: 700px;
+  .nav-list {
+    padding: 0 5px;
+    margin-top: 0;
+    .nav-cell {
+      height: 2.5rem;
+      width: 100%;
+      color: #1a1a1a;
+      border-left: 2px solid #fff;
+      line-height: 2.5rem;
+      font-size: larger;
+      // text-align: center;
+      padding: 10px 30px;
+      overflow: hidden;
+
+      > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.active {
+        color: #bd9d62;
+        background: #F7F7F7;
+        border-left: 2px solid #bd9d62;
+      }
+    }
+  }
+}

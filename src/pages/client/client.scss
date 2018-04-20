@@ -4,6 +4,12 @@ body {
 .banner {
   .banner-img {
     width: 100%;
-    height: 100%;
+  }
+}
+.cate-wrap {
+  transform: translate(0, 0);
+  background: #f7f7f7;
+  .cate-right {
+    padding-left: 5rem;
   }
 }
